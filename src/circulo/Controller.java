@@ -13,6 +13,8 @@ public class Controller {
     public Controller() {
     }
 
+    
+    /* METODO PRINCIPAL */
     public void start() throws Exception  {
         generarRadios();
         ordenamiento();
@@ -27,13 +29,13 @@ public class Controller {
             radio = Math.random();
             radios.add(radio);
         } while (radio > 0.01);
-        System.out.println(radios);
     }
     
     private void ordenamiento() throws Exception {
         Scanner userChoice = new Scanner(System.in);
 
-        System.out.printf("%s%n%s%n%s%n",
+        System.out.printf("%s%n%s%n%s%n%s%n",
+                "Bienvenido al generador aleatorio de círculos",
                 "Selecciona el método de ordenamiento:",
                 "1 - Por orden ascendente",
                 "2 - Por orden descendente"
